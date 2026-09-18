@@ -214,6 +214,22 @@ section { scroll-margin-top: 76px; }
 }
 .btn-blue:hover { background: var(--blue-soft); transform: translateY(-2px); }
 
+.cv-link {
+  display: inline-block;
+  margin-top: 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  transition: color .25s ease, border-color .25s ease;
+}
+
+.cv-link:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: 34px;
