@@ -69,16 +69,6 @@ section { scroll-margin-top: 76px; }
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .logo .dot { color: var(--gold); }
