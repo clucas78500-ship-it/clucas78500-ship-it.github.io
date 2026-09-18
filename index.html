@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucas — Photographe &amp; Étudiant en Master IA</title>
+<meta name="description" content="Portfolio de Lucas : photographie et projets en intelligence artificielle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <nav class="navbar">
+    <a href="#home" class="logo">Lucas<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Accueil</a></li>
+      <li><a href="#photographie" class="nav-link">Photographie</a></li>
+      <li><a href="#informatique" class="nav-link">Informatique</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button id="navToggle" class="nav-toggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg" style="background-image:url('https://picsum.photos/seed/lucas-hero/1600/1200')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <p class="hero-kicker">Portfolio</p>
+      <h1 class="hero-title">Lucas</h1>
+      <p class="hero-subtitle">Photographe passionné &amp; étudiant en <strong>Master Intelligence Artificielle</strong></p>
+      <div class="hero-actions">
+        <a href="#photographie" class="btn btn-gold">Voir mes photos</a>
+        <a href="#informatique" class="btn btn-blue">Voir mes projets</a>
+      </div>
+    </div>
+    <a href="#photographie" class="scroll-indicator" aria-label="Défiler vers le bas"><span></span></a>
+  </section>
+
+  <!-- PARTIE 1 : PHOTOGRAPHIE -->
+  <section id="photographie" class="section section-photo">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-kicker gold">Partie 01</p>
+        <h2 class="section-title">Photographie</h2>
+        <p class="section-text">
+          Je pratique la photographie en amateur passionné, entre portraits, paysages et scènes de rue.
+          Voici une sélection de mes clichés préférés.
+        </p>
+      </div>
+
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="paysage">Paysage</button>
+        <button class="filter-btn" data-filter="street">Street</button>
+        <button class="filter-btn" data-filter="nb">Noir &amp; Blanc</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="gallery-item reveal" data-category="portrait">
+          <img src="https://picsum.photos/seed/portrait1/600/750" alt="Portrait naturel" loading="lazy">
+          <figcaption><span class="tag">Portrait</span><span class="title">Portrait naturel</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="paysage">
+          <img src="https://picsum.photos/seed/landscape1/700/500" alt="Montagnes au lever du soleil" loading="lazy">
+          <figcaption><span class="tag">Paysage</span><span class="title">Lever du soleil</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="street">
+          <img src="https://picsum.photos/seed/street1/650/800" alt="Rue animée" loading="lazy">
+          <figcaption><span class="tag">Street</span><span class="title">Rue animée</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="nb">
+          <img src="https://picsum.photos/seed/bw1/700/500" alt="Architecture en noir et blanc" loading="lazy">
+          <figcaption><span class="tag">N&amp;B</span><span class="title">Architecture</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="paysage">
+          <img src="https://picsum.photos/seed/landscape2/600/750" alt="Côte bretonne" loading="lazy">
+          <figcaption><span class="tag">Paysage</span><span class="title">Côte bretonne</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="street">
+          <img src="https://picsum.photos/seed/street2/700/500" alt="Marché local" loading="lazy">
+          <figcaption><span class="tag">Street</span><span class="title">Marché local</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="portrait">
+          <img src="https://picsum.photos/seed/portrait2/650/800" alt="Portrait studio" loading="lazy">
+          <figcaption><span class="tag">Portrait</span><span class="title">Portrait studio</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="nb">
+          <img src="https://picsum.photos/seed/bw2/600/750" alt="Portrait en contre-jour" loading="lazy">
+          <figcaption><span class="tag">N&amp;B</span><span class="title">Contre-jour</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="paysage">
+          <img src="https://picsum.photos/seed/landscape3/700/500" alt="Forêt brumeuse" loading="lazy">
+          <figcaption><span class="tag">Paysage</span><span class="title">Forêt brumeuse</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="street">
+          <img src="https://picsum.photos/seed/street3/600/750" alt="Réflexions urbaines" loading="lazy">
+          <figcaption><span class="tag">Street</span><span class="title">Réflexions urbaines</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="portrait">
+          <img src="https://picsum.photos/seed/portrait3/700/500" alt="Regard" loading="lazy">
+          <figcaption><span class="tag">Portrait</span><span class="title">Regard</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal" data-category="nb">
+          <img src="https://picsum.photos/seed/bw3/650/800" alt="Ombres et lumières" loading="lazy">
+          <figcaption><span class="tag">N&amp;B</span><span class="title">Ombres et lumières</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTIE 2 : INFORMATIQUE / IA -->
+  <section id="informatique" class="section section-tech">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-kicker blue">Partie 02</p>
+        <h2 class="section-title">Informatique — Master IA</h2>
+        <p class="section-text">
+          Actuellement en Master Intelligence Artificielle, je conçois des projets mêlant machine learning,
+          deep learning et traitement de données.
+        </p>
+      </div>
+
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <h3>Mon parcours</h3>
+          <p>
+            Passionné par l'informatique et l'intelligence artificielle, je poursuis actuellement un Master IA
+            après une formation en informatique générale. Je m'intéresse particulièrement au machine learning,
+            au deep learning, au traitement du langage naturel (NLP) et à la vision par ordinateur.
+          </p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-year">L3</span>
+            <span class="timeline-label">Licence Informatique</span>
+          </li>
+          <li>
+            <span class="timeline-year">M1</span>
+            <span class="timeline-label">Master 1 — Intelligence Artificielle</span>
+          </li>
+          <li class="current">
+            <span class="timeline-year">M2</span>
+            <span class="timeline-label">Master 2 — Intelligence Artificielle (en cours)</span>
+          </li>
+        </ol>
+      </div>
+
+      <h3 class="subsection-title reveal">Compétences</h3>
+      <div class="skills reveal">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Deep Learning</span>
+        <span class="skill-tag">PyTorch / TensorFlow</span>
+        <span class="skill-tag">NLP</span>
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">SQL &amp; Bases de données</span>
+        <span class="skill-tag">Git &amp; GitHub</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Cloud (AWS / GCP)</span>
+      </div>
+
+      <h3 class="subsection-title reveal">Projets</h3>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-thumb" style="background-image:url('https://picsum.photos/seed/proj-cnn/500/300')"></div>
+          <div class="project-body">
+            <h4>Classification d'images par CNN</h4>
+            <p>Réseau de neurones convolutif entraîné pour classifier des images en plusieurs catégories.</p>
+            <div class="project-tags">
+              <span>Python</span><span>PyTorch</span><span>OpenCV</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code</a>
+              <a href="#" class="link-arrow">Démo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb" style="background-image:url('https://picsum.photos/seed/proj-chatbot/500/300')"></div>
+          <div class="project-body">
+            <h4>Chatbot NLP</h4>
+            <p>Assistant conversationnel basé sur des modèles de langage de type transformer.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Hugging Face</span><span>NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code</a>
+              <a href="#" class="link-arrow">Démo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb" style="background-image:url('https://picsum.photos/seed/proj-reco/500/300')"></div>
+          <div class="project-body">
+            <h4>Système de recommandation</h4>
+            <p>Moteur de recommandation collaboratif pour une plateforme e-commerce.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code</a>
+              <a href="#" class="link-arrow">Démo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb" style="background-image:url('https://picsum.photos/seed/proj-yolo/500/300')"></div>
+          <div class="project-body">
+            <h4>Détection d'objets en temps réel</h4>
+            <p>Pipeline de détection d'objets sur flux vidéo à l'aide de YOLO.</p>
+            <div class="project-tags">
+              <span>Python</span><span>YOLOv8</span><span>OpenCV</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Code</a>
+              <a href="#" class="link-arrow">Démo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-kicker gold">Contact</p>
+        <h2 class="section-title">Discutons</h2>
+        <p class="section-text">Une question, un projet ou une envie de collaborer ? N'hésitez pas à me contacter.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <a href="mailto:clucas78500@gmail.com" class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">clucas78500@gmail.com</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-label">Localisation</span>
+            <span class="contact-value">France</span>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Envoyer</button>
+          <p class="form-note">Ouvre votre messagerie pour envoyer le message.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Lucas. Tous droits réservés.</p>
+  <a href="#home" class="back-to-top">Haut de page ↑</a>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+  <p id="lightboxCaption" class="lightbox-caption"></p>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
